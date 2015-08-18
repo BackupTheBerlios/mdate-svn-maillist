@@ -1,0 +1,27 @@
+From ewe2 at sheep.berlios.de  Wed Mar  9 04:23:07 2005
+From: ewe2 at sheep.berlios.de (sean dwyer at BerliOS)
+Date: Wed, 9 Mar 2005 04:23:07 +0100
+Subject: [Mdate-svn] r4 - trunk
+Message-ID: <200503090323.j293N7sd013337@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-03-09 04:22:48 +0100 (Wed, 09 Mar 2005)
+New Revision: 4
+
+Added:
+   trunk/TODO
+Log:
+added TODO for 1.5.3 release
+
+Added: trunk/TODO
+===================================================================
+--- trunk/TODO	2004-12-19 15:50:14 UTC (rev 3)
++++ trunk/TODO	2005-03-09 03:22:48 UTC (rev 4)
+@@ -0,0 +1,4 @@
++For 1.5.3:
++
++rewrite main.cc so it becomes merely the command-line version to accommodate
++event-driven interfaces.
+
+
+

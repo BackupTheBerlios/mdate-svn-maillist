@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mdate-svn] r10 - in trunk: . debian
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mdate-svn/2005-October/index.html" >
+   <LINK REL="made" HREF="mailto:mdate-svn%40lists.berlios.de?Subject=Re%3A%20%5BMdate-svn%5D%20r10%20-%20in%20trunk%3A%20.%20debian&In-Reply-To=%3C200510061413.j96ED62C028400%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   <LINK REL="Next"  HREF="000008.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mdate-svn] r10 - in trunk: . debian</H1>
+    <B>sean dwyer at BerliOS</B> 
+    <A HREF="mailto:mdate-svn%40lists.berlios.de?Subject=Re%3A%20%5BMdate-svn%5D%20r10%20-%20in%20trunk%3A%20.%20debian&In-Reply-To=%3C200510061413.j96ED62C028400%40sheep.berlios.de%3E"
+       TITLE="[Mdate-svn] r10 - in trunk: . debian">ewe2 at berlios.de
+       </A><BR>
+    <I>Thu Oct  6 16:13:06 CEST 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">[Mdate-svn] r9 - tags/mdate-1-5-3
+</A></li>
+        <LI>Next message: <A HREF="000008.html">[Mdate-svn] r11 - tags
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: ewe2
+Date: 2005-10-06 16:13:06 +0200 (Thu, 06 Oct 2005)
+New Revision: 10
+
+Modified:
+   trunk/ChangeLog
+   trunk/Makefile
+   trunk/README
+   trunk/debian/changelog
+   trunk/mdate-1.html
+   trunk/mdate.1
+   trunk/mdate.sgml
+   trunk/mdate.text
+Log:
+fixed more documentation for 1.5.3
+
+Modified: trunk/ChangeLog
+===================================================================
+--- trunk/ChangeLog	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/ChangeLog	2005-10-06 14:13:06 UTC (rev 10)
+@@ -7,6 +7,10 @@
+ 
+ -- 
+ 
++2005-10-06 13:52  ewe2
++
++	* trunk/ChangeLog, trunk/debian/docs: fixed debian targets
++
+ 2005-10-06 13:50  ewe2
+ 
+ 	* trunk/Makefile: versioning 1.5.3
+
+Modified: trunk/Makefile
+===================================================================
+--- trunk/Makefile	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/Makefile	2005-10-06 14:13:06 UTC (rev 10)
+@@ -39,7 +39,8 @@
+ 
+ SVNVERSION = 1-5-3
+ # for future use on the net
+-REPOS=<A HREF="http://services.pengsheep.org/svn/mdate">http://services.pengsheep.org/svn/mdate</A>
++#REPOS=<A HREF="http://services.pengsheep.org/svn/mdate">http://services.pengsheep.org/svn/mdate</A>
++REPOS=svn+<A HREF="ssh://svn.berlios.de/svnroot/repos/mdate">ssh://svn.berlios.de/svnroot/repos/mdate</A>
+ 
+ ## DEFINE YOUR PREFERRED DEFAULT LANGUAGE HERE with a 1!
+ DEF_EN=
+
+Modified: trunk/README
+===================================================================
+--- trunk/README	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/README	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,4 +1,4 @@
+-Mdate++ 1.5.2  Copyright(c) 1998-2004 Sean Dwyer &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mdate-svn">ewe2 at users.sourceforge.net</A>&gt;
++Mdate++ 1.5.3  Copyright(c) 1998-2004 Sean Dwyer &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mdate-svn">ewe2 at users.sourceforge.net</A>&gt;
+ =============================================================================
+ 
+ Mdate++ is really Mdate 1.2.8 rewritten in C++, folding in libmdate 0.0.5, and
+
+Modified: trunk/debian/changelog
+===================================================================
+--- trunk/debian/changelog	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/debian/changelog	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,3 +1,9 @@
++mdate (1.5.3) unstable; urgency=low
++
++  * New upstream version, relicensed documentation for Debian. 
++
++ -- ewe2 &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mdate-svn">ewe2 at users.sourceforge.net</A>&gt;  Fri,  7 Oct 2005 00:11:55 +1000
++
+ mdate (1.5.2-1) unstable; urgency=low
+ 
+   * New upstream version, changed VC to subversion.
+
+Modified: trunk/mdate-1.html
+===================================================================
+--- trunk/mdate-1.html	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate-1.html	2005-10-06 14:13:06 UTC (rev 10)
+@@ -38,7 +38,7 @@
+ &lt;H2&gt;&lt;A NAME=&quot;ss1.2&quot;&gt;1.2&lt;/A&gt; &lt;A HREF=&quot;mdate.html#toc1.2&quot;&gt;History&lt;/A&gt;
+ &lt;/H2&gt;
+ 
+-&lt;P&gt;The current version of Mdate is 1.5.2, written by Sean Dwyer with help from
++&lt;P&gt;The current version of Mdate is 1.5.3, written by Sean Dwyer with help from
+ many others over the years.&lt;/P&gt;
+ &lt;P&gt;The first public version of Mdate was 0.5.0, written in late 1998, and was
+ also ported to MS-DOS. Craig Robbins contributed to versions 0.5.1 to
+
+Modified: trunk/mdate.1
+===================================================================
+--- trunk/mdate.1	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.1	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,5 +1,5 @@
+ .\&quot; $Id: mdate.1 37 2004-12-19 00:10:22Z ewe2 $
+-.TH MDATE 1 &quot;Sunday 19 December 2004&quot; &quot;Linux&quot; &quot;1.5.2&quot;
++.TH MDATE 1 &quot;Friday 7 October 2005&quot; &quot;Linux&quot; &quot;1.5.3&quot;
+ .SH NAME
+ mdate \- a command-line mayan date utility
+ .SH SYNOPSIS
+
+Modified: trunk/mdate.sgml
+===================================================================
+--- trunk/mdate.sgml	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.sgml	2005-10-06 14:13:06 UTC (rev 10)
+@@ -40,7 +40,7 @@
+ 
+ &lt;sect1&gt;History
+ &lt;p&gt;
+-The current version of Mdate is 1.5.2, written by Sean Dwyer with help from
++The current version of Mdate is 1.5.3, written by Sean Dwyer with help from
+ many others over the years.
+ 
+ The first public version of Mdate was 0.5.0, written in late 1998, and was
+
+Modified: trunk/mdate.text
+===================================================================
+--- trunk/mdate.text	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.text	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,7 +1,7 @@
+   Mdate
+   Sean Dwyer &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/mdate-svn">ewe2 at users.sourceforge.net</A>&gt;
+-  $Revision: 1.4 $ $Date: 2004-08-14 02:28:57 +1000 (Sat, 14
+-  Aug 2004) $
++  $Revision: 1.4 $ $Date: 2004-12-19 11:10:22 +1100 (Sun, 19
++  Dec 2004) $
+ 
+   Mdate is an easy to use command-line utility for conversion between
+   Gregorian calendar  dates and Mayan calendar dates.
+@@ -45,14 +45,12 @@
+ 
+   [1m1.1.  Disclaimer &amp; License[0m
+ 
+-  This document is distributed in the hope that it will be useful, but
+-  WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
++  This document was formerly licensed under the GNU FDL 1.1. It now
++  falls under the general GPL license of the accompanying code. Previous
++  versions of this documentation may, if wished, also fall under GPL on
++  contact with the author.
+ 
+-  Copyright (c) 2002-2004 by Sean Dwyer. This material may be
+-  distributed only subject to the terms and conditions set forth in the
+-  GNU Free Documentation License, v1.1 or later (the latest version is
+-  presently available at <A HREF="http://www.gnu.org/copyleft/fdl.html">http://www.gnu.org/copyleft/fdl.html</A>).
++  Copyright (c) 2002-2004 by Sean Dwyer.
+ 
+   Please freely copy and distribute (sell or give away) this document in
+   any format, providing you adhere to the terms of the above License.
+@@ -62,8 +60,10 @@
+ 
+   [1m1.2.  History[0m
+ 
+-  The current version of Mdate is 1.5.2, written by Sean Dwyer with help
++  The current version of Mdate is 1.5.3, written by Sean Dwyer with help
+   from many others over the years.
++
++
+   The first public version of Mdate was 0.5.0, written in late 1998, and
+   was also ported to MS-DOS. Craig Robbins contributed to versions 0.5.1
+   to 1.0.0beta1. Version 1.0.0beta1 (1999) was the first GPL version of
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">[Mdate-svn] r9 - tags/mdate-1-5-3
+</A></li>
+	<LI>Next message: <A HREF="000008.html">[Mdate-svn] r11 - tags
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mdate-svn">More information about the Mdate-svn
+mailing list</a><br>
+</body></html>

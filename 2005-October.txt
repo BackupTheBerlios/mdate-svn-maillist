@@ -1,0 +1,1151 @@
+From cronopios at gmail.com  Thu Oct  6 15:16:37 2005
+From: cronopios at gmail.com (=?ISO-8859-1?Q?Enrique_Mat=EDas_S=E1nchez_=28Quique=29?=)
+Date: Thu, 6 Oct 2005 15:16:37 +0200
+Subject: [Mdate-svn] Documentation license
+Message-ID: <8511b92f0510060616j24823624i@mail.gmail.com>
+
+Hi,
+I noticed the mdate documentation is currently under the GNU Free
+Documentation License, v1.1 or later.
+
+Unfortunately, the Debian project regards this license as non-free,
+and documentation under this license will not be included in future
+releases:
+    http://release.debian.org/removing-non-free-documentation.
+
+Could the documentation be relicensed as regular GNU GPL?
+
+Thanks,
+ Quique
+
+
+--
+It is impossible to make anything foolproof, because fools are so ingenious.
+- Roger Berg
+
+
+From ewe2 at berlios.de  Thu Oct  6 15:48:43 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 15:48:43 +0200
+Subject: [Mdate-svn] r5 - trunk
+Message-ID: <200510061348.j96DmhRu025074@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 15:48:42 +0200 (Thu, 06 Oct 2005)
+New Revision: 5
+
+Removed:
+   trunk/FDL
+Modified:
+   trunk/Makefile
+   trunk/NEWS
+   trunk/mdate-1.html
+   trunk/mdate.sgml
+   trunk/mdate.spec
+Log:
+Relicensed documentation, removed FDl
+
+Deleted: trunk/FDL
+===================================================================
+--- trunk/FDL	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/FDL	2005-10-06 13:48:42 UTC (rev 5)
+@@ -1,355 +0,0 @@
+-		GNU Free Documentation License
+-		   Version 1.1, March 2000
+-
+- Copyright (C) 2000  Free Software Foundation, Inc.
+-     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+- Everyone is permitted to copy and distribute verbatim copies
+- of this license document, but changing it is not allowed.
+-
+-
+-0. PREAMBLE
+-
+-The purpose of this License is to make a manual, textbook, or other
+-written document "free" in the sense of freedom: to assure everyone
+-the effective freedom to copy and redistribute it, with or without
+-modifying it, either commercially or noncommercially.  Secondarily,
+-this License preserves for the author and publisher a way to get
+-credit for their work, while not being considered responsible for
+-modifications made by others.
+-
+-This License is a kind of "copyleft", which means that derivative
+-works of the document must themselves be free in the same sense.  It
+-complements the GNU General Public License, which is a copyleft
+-license designed for free software.
+-
+-We have designed this License in order to use it for manuals for free
+-software, because free software needs free documentation: a free
+-program should come with manuals providing the same freedoms that the
+-software does.  But this License is not limited to software manuals;
+-it can be used for any textual work, regardless of subject matter or
+-whether it is published as a printed book.  We recommend this License
+-principally for works whose purpose is instruction or reference.
+-
+-
+-1. APPLICABILITY AND DEFINITIONS
+-
+-This License applies to any manual or other work that contains a
+-notice placed by the copyright holder saying it can be distributed
+-under the terms of this License.  The "Document", below, refers to any
+-such manual or work.  Any member of the public is a licensee, and is
+-addressed as "you".
+-
+-A "Modified Version" of the Document means any work containing the
+-Document or a portion of it, either copied verbatim, or with
+-modifications and/or translated into another language.
+-
+-A "Secondary Section" is a named appendix or a front-matter section of
+-the Document that deals exclusively with the relationship of the
+-publishers or authors of the Document to the Document's overall subject
+-(or to related matters) and contains nothing that could fall directly
+-within that overall subject.  (For example, if the Document is in part a
+-textbook of mathematics, a Secondary Section may not explain any
+-mathematics.)  The relationship could be a matter of historical
+-connection with the subject or with related matters, or of legal,
+-commercial, philosophical, ethical or political position regarding
+-them.
+-
+-The "Invariant Sections" are certain Secondary Sections whose titles
+-are designated, as being those of Invariant Sections, in the notice
+-that says that the Document is released under this License.
+-
+-The "Cover Texts" are certain short passages of text that are listed,
+-as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+-the Document is released under this License.
+-
+-A "Transparent" copy of the Document means a machine-readable copy,
+-represented in a format whose specification is available to the
+-general public, whose contents can be viewed and edited directly and
+-straightforwardly with generic text editors or (for images composed of
+-pixels) generic paint programs or (for drawings) some widely available
+-drawing editor, and that is suitable for input to text formatters or
+-for automatic translation to a variety of formats suitable for input
+-to text formatters.  A copy made in an otherwise Transparent file
+-format whose markup has been designed to thwart or discourage
+-subsequent modification by readers is not Transparent.  A copy that is
+-not "Transparent" is called "Opaque".
+-
+-Examples of suitable formats for Transparent copies include plain
+-ASCII without markup, Texinfo input format, LaTeX input format, SGML
+-or XML using a publicly available DTD, and standard-conforming simple
+-HTML designed for human modification.  Opaque formats include
+-PostScript, PDF, proprietary formats that can be read and edited only
+-by proprietary word processors, SGML or XML for which the DTD and/or
+-processing tools are not generally available, and the
+-machine-generated HTML produced by some word processors for output
+-purposes only.
+-
+-The "Title Page" means, for a printed book, the title page itself,
+-plus such following pages as are needed to hold, legibly, the material
+-this License requires to appear in the title page.  For works in
+-formats which do not have any title page as such, "Title Page" means
+-the text near the most prominent appearance of the work's title,
+-preceding the beginning of the body of the text.
+-
+-
+-2. VERBATIM COPYING
+-
+-You may copy and distribute the Document in any medium, either
+-commercially or noncommercially, provided that this License, the
+-copyright notices, and the license notice saying this License applies
+-to the Document are reproduced in all copies, and that you add no other
+-conditions whatsoever to those of this License.  You may not use
+-technical measures to obstruct or control the reading or further
+-copying of the copies you make or distribute.  However, you may accept
+-compensation in exchange for copies.  If you distribute a large enough
+-number of copies you must also follow the conditions in section 3.
+-
+-You may also lend copies, under the same conditions stated above, and
+-you may publicly display copies.
+-
+-
+-3. COPYING IN QUANTITY
+-
+-If you publish printed copies of the Document numbering more than 100,
+-and the Document's license notice requires Cover Texts, you must enclose
+-the copies in covers that carry, clearly and legibly, all these Cover
+-Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+-the back cover.  Both covers must also clearly and legibly identify
+-you as the publisher of these copies.  The front cover must present
+-the full title with all words of the title equally prominent and
+-visible.  You may add other material on the covers in addition.
+-Copying with changes limited to the covers, as long as they preserve
+-the title of the Document and satisfy these conditions, can be treated
+-as verbatim copying in other respects.
+-
+-If the required texts for either cover are too voluminous to fit
+-legibly, you should put the first ones listed (as many as fit
+-reasonably) on the actual cover, and continue the rest onto adjacent
+-pages.
+-
+-If you publish or distribute Opaque copies of the Document numbering
+-more than 100, you must either include a machine-readable Transparent
+-copy along with each Opaque copy, or state in or with each Opaque copy
+-a publicly-accessible computer-network location containing a complete
+-Transparent copy of the Document, free of added material, which the
+-general network-using public has access to download anonymously at no
+-charge using public-standard network protocols.  If you use the latter
+-option, you must take reasonably prudent steps, when you begin
+-distribution of Opaque copies in quantity, to ensure that this
+-Transparent copy will remain thus accessible at the stated location
+-until at least one year after the last time you distribute an Opaque
+-copy (directly or through your agents or retailers) of that edition to
+-the public.
+-
+-It is requested, but not required, that you contact the authors of the
+-Document well before redistributing any large number of copies, to give
+-them a chance to provide you with an updated version of the Document.
+-
+-
+-4. MODIFICATIONS
+-
+-You may copy and distribute a Modified Version of the Document under
+-the conditions of sections 2 and 3 above, provided that you release
+-the Modified Version under precisely this License, with the Modified
+-Version filling the role of the Document, thus licensing distribution
+-and modification of the Modified Version to whoever possesses a copy
+-of it.  In addition, you must do these things in the Modified Version:
+-
+-A. Use in the Title Page (and on the covers, if any) a title distinct
+-   from that of the Document, and from those of previous versions
+-   (which should, if there were any, be listed in the History section
+-   of the Document).  You may use the same title as a previous version
+-   if the original publisher of that version gives permission.
+-B. List on the Title Page, as authors, one or more persons or entities
+-   responsible for authorship of the modifications in the Modified
+-   Version, together with at least five of the principal authors of the
+-   Document (all of its principal authors, if it has less than five).
+-C. State on the Title page the name of the publisher of the
+-   Modified Version, as the publisher.
+-D. Preserve all the copyright notices of the Document.
+-E. Add an appropriate copyright notice for your modifications
+-   adjacent to the other copyright notices.
+-F. Include, immediately after the copyright notices, a license notice
+-   giving the public permission to use the Modified Version under the
+-   terms of this License, in the form shown in the Addendum below.
+-G. Preserve in that license notice the full lists of Invariant Sections
+-   and required Cover Texts given in the Document's license notice.
+-H. Include an unaltered copy of this License.
+-I. Preserve the section entitled "History", and its title, and add to
+-   it an item stating at least the title, year, new authors, and
+-   publisher of the Modified Version as given on the Title Page.  If
+-   there is no section entitled "History" in the Document, create one
+-   stating the title, year, authors, and publisher of the Document as
+-   given on its Title Page, then add an item describing the Modified
+-   Version as stated in the previous sentence.
+-J. Preserve the network location, if any, given in the Document for
+-   public access to a Transparent copy of the Document, and likewise
+-   the network locations given in the Document for previous versions
+-   it was based on.  These may be placed in the "History" section.
+-   You may omit a network location for a work that was published at
+-   least four years before the Document itself, or if the original
+-   publisher of the version it refers to gives permission.
+-K. In any section entitled "Acknowledgements" or "Dedications",
+-   preserve the section's title, and preserve in the section all the
+-   substance and tone of each of the contributor acknowledgements
+-   and/or dedications given therein.
+-L. Preserve all the Invariant Sections of the Document,
+-   unaltered in their text and in their titles.  Section numbers
+-   or the equivalent are not considered part of the section titles.
+-M. Delete any section entitled "Endorsements".  Such a section
+-   may not be included in the Modified Version.
+-N. Do not retitle any existing section as "Endorsements"
+-   or to conflict in title with any Invariant Section.
+-
+-If the Modified Version includes new front-matter sections or
+-appendices that qualify as Secondary Sections and contain no material
+-copied from the Document, you may at your option designate some or all
+-of these sections as invariant.  To do this, add their titles to the
+-list of Invariant Sections in the Modified Version's license notice.
+-These titles must be distinct from any other section titles.
+-
+-You may add a section entitled "Endorsements", provided it contains
+-nothing but endorsements of your Modified Version by various
+-parties--for example, statements of peer review or that the text has
+-been approved by an organization as the authoritative definition of a
+-standard.
+-
+-You may add a passage of up to five words as a Front-Cover Text, and a
+-passage of up to 25 words as a Back-Cover Text, to the end of the list
+-of Cover Texts in the Modified Version.  Only one passage of
+-Front-Cover Text and one of Back-Cover Text may be added by (or
+-through arrangements made by) any one entity.  If the Document already
+-includes a cover text for the same cover, previously added by you or
+-by arrangement made by the same entity you are acting on behalf of,
+-you may not add another; but you may replace the old one, on explicit
+-permission from the previous publisher that added the old one.
+-
+-The author(s) and publisher(s) of the Document do not by this License
+-give permission to use their names for publicity for or to assert or
+-imply endorsement of any Modified Version.
+-
+-
+-5. COMBINING DOCUMENTS
+-
+-You may combine the Document with other documents released under this
+-License, under the terms defined in section 4 above for modified
+-versions, provided that you include in the combination all of the
+-Invariant Sections of all of the original documents, unmodified, and
+-list them all as Invariant Sections of your combined work in its
+-license notice.
+-
+-The combined work need only contain one copy of this License, and
+-multiple identical Invariant Sections may be replaced with a single
+-copy.  If there are multiple Invariant Sections with the same name but
+-different contents, make the title of each such section unique by
+-adding at the end of it, in parentheses, the name of the original
+-author or publisher of that section if known, or else a unique number.
+-Make the same adjustment to the section titles in the list of
+-Invariant Sections in the license notice of the combined work.
+-
+-In the combination, you must combine any sections entitled "History"
+-in the various original documents, forming one section entitled
+-"History"; likewise combine any sections entitled "Acknowledgements",
+-and any sections entitled "Dedications".  You must delete all sections
+-entitled "Endorsements."
+-
+-
+-6. COLLECTIONS OF DOCUMENTS
+-
+-You may make a collection consisting of the Document and other documents
+-released under this License, and replace the individual copies of this
+-License in the various documents with a single copy that is included in
+-the collection, provided that you follow the rules of this License for
+-verbatim copying of each of the documents in all other respects.
+-
+-You may extract a single document from such a collection, and distribute
+-it individually under this License, provided you insert a copy of this
+-License into the extracted document, and follow this License in all
+-other respects regarding verbatim copying of that document.
+-
+-
+-7. AGGREGATION WITH INDEPENDENT WORKS
+-
+-A compilation of the Document or its derivatives with other separate
+-and independent documents or works, in or on a volume of a storage or
+-distribution medium, does not as a whole count as a Modified Version
+-of the Document, provided no compilation copyright is claimed for the
+-compilation.  Such a compilation is called an "aggregate", and this
+-License does not apply to the other self-contained works thus compiled
+-with the Document, on account of their being thus compiled, if they
+-are not themselves derivative works of the Document.
+-
+-If the Cover Text requirement of section 3 is applicable to these
+-copies of the Document, then if the Document is less than one quarter
+-of the entire aggregate, the Document's Cover Texts may be placed on
+-covers that surround only the Document within the aggregate.
+-Otherwise they must appear on covers around the whole aggregate.
+-
+-
+-8. TRANSLATION
+-
+-Translation is considered a kind of modification, so you may
+-distribute translations of the Document under the terms of section 4.
+-Replacing Invariant Sections with translations requires special
+-permission from their copyright holders, but you may include
+-translations of some or all Invariant Sections in addition to the
+-original versions of these Invariant Sections.  You may include a
+-translation of this License provided that you also include the
+-original English version of this License.  In case of a disagreement
+-between the translation and the original English version of this
+-License, the original English version will prevail.
+-
+-
+-9. TERMINATION
+-
+-You may not copy, modify, sublicense, or distribute the Document except
+-as expressly provided for under this License.  Any other attempt to
+-copy, modify, sublicense or distribute the Document is void, and will
+-automatically terminate your rights under this License.  However,
+-parties who have received copies, or rights, from you under this
+-License will not have their licenses terminated so long as such
+-parties remain in full compliance.
+-
+-
+-10. FUTURE REVISIONS OF THIS LICENSE
+-
+-The Free Software Foundation may publish new, revised versions
+-of the GNU Free Documentation License from time to time.  Such new
+-versions will be similar in spirit to the present version, but may
+-differ in detail to address new problems or concerns.  See
+-http://www.gnu.org/copyleft/.
+-
+-Each version of the License is given a distinguishing version number.
+-If the Document specifies that a particular numbered version of this
+-License "or any later version" applies to it, you have the option of
+-following the terms and conditions either of that specified version or
+-of any later version that has been published (not as a draft) by the
+-Free Software Foundation.  If the Document does not specify a version
+-number of this License, you may choose any version ever published (not
+-as a draft) by the Free Software Foundation.
+-
+-
+-ADDENDUM: How to use this License for your documents
+-
+-To use this License in a document you have written, include a copy of
+-the License in the document and put the following copyright and
+-license notices just after the title page:
+-
+-      Copyright (c)  YEAR  YOUR NAME.
+-      Permission is granted to copy, distribute and/or modify this document
+-      under the terms of the GNU Free Documentation License, Version 1.1
+-      or any later version published by the Free Software Foundation;
+-      with the Invariant Sections being LIST THEIR TITLES, with the
+-      Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+-      A copy of the license is included in the section entitled "GNU
+-      Free Documentation License".
+-
+-If you have no Invariant Sections, write "with no Invariant Sections"
+-instead of saying which ones are invariant.  If you have no
+-Front-Cover Texts, write "no Front-Cover Texts" instead of
+-"Front-Cover Texts being LIST"; likewise for Back-Cover Texts.
+-
+-If your document contains nontrivial examples of program code, we
+-recommend releasing these examples in parallel under your choice of
+-free software license, such as the GNU General Public License,
+-to permit their use in free software.
+
+Modified: trunk/Makefile
+===================================================================
+--- trunk/Makefile	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/Makefile	2005-10-06 13:48:42 UTC (rev 5)
+@@ -267,7 +267,7 @@
+ 	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps $(DOCDIR)/mdate.sgml; \
+ 	install -m644 mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
+ 	install -m644  README NEWS ChangeLog GPL API $(DOCDIR); \
+-	install -m644  FDL AUTHORS Translators $(DOCDIR); \
++	install -m644  AUTHORS Translators $(DOCDIR); \
+ 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
+ 	install -m644  *.html $(HTMLDIR)
+ 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
+
+Modified: trunk/NEWS
+===================================================================
+--- trunk/NEWS	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/NEWS	2005-10-06 13:48:42 UTC (rev 5)
+@@ -1,3 +1,8 @@
++1.5.3:
++
++Relicensed the documentation to normal GPL to comply with Debian documentation
++requirements. No other changes.
++
+ 1.5.2:
+ 
+ Trying out subversion as an alternate VC system to encourage multiple
+
+Modified: trunk/mdate-1.html
+===================================================================
+--- trunk/mdate-1.html	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/mdate-1.html	2005-10-06 13:48:42 UTC (rev 5)
+@@ -26,13 +26,10 @@
+ <H2><A NAME="ss1.1">1.1</A> <A HREF="mdate.html#toc1.1">Disclaimer &amp; License</A>
+ </H2>
+ 
+-<P>This document is distributed in the hope that it will be useful,
+-but WITHOUT ANY WARRANTY; without even the implied warranty of
+-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</P>
+-<P>Copyright (c) 2002-2004 by Sean Dwyer. This material may be distributed only
+-subject to the terms and conditions set forth in the GNU Free Documentation
+-License, v1.1 or later (the latest version is presently available at
+-http://www.gnu.org/copyleft/fdl.html).</P>
++<P>This document was formerly licensed under the GNU FDL 1.1. It now falls under
++the general GPL license of the accompanying code. Previous versions of this
++documentation may, if wished, also fall under GPL on contact with the author.</P>
++<P>Copyright (c) 2002-2004 by Sean Dwyer.</P>
+ <P>Please freely copy and distribute (sell or give away) this document in any
+ format, providing you adhere to the terms of the above License.  It's
+ requested that corrections and/or comments be forwarded to the document
+
+Modified: trunk/mdate.sgml
+===================================================================
+--- trunk/mdate.sgml	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/mdate.sgml	2005-10-06 13:48:42 UTC (rev 5)
+@@ -27,14 +27,11 @@
+ 
+ <sect1>Disclaimer &amp; License
+ <p>
+-This document is distributed in the hope that it will be useful,
+-but WITHOUT ANY WARRANTY; without even the implied warranty of
+-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
++This document was formerly licensed under the GNU FDL 1.1. It now falls under
++the general GPL license of the accompanying code. Previous versions of this
++documentation may, if wished, also fall under GPL on contact with the author.
+ 
+-Copyright (c) 2002-2004 by Sean Dwyer. This material may be distributed only
+-subject to the terms and conditions set forth in the GNU Free Documentation
+-License, v1.1 or later (the latest version is presently available at
+-http://www.gnu.org/copyleft/fdl.html).
++Copyright (c) 2002-2004 by Sean Dwyer.
+ 
+ Please freely copy and distribute (sell or give away) this document in any
+ format, providing you adhere to the terms of the above License.  It's
+
+Modified: trunk/mdate.spec
+===================================================================
+--- trunk/mdate.spec	2005-03-09 03:22:48 UTC (rev 4)
++++ trunk/mdate.spec	2005-10-06 13:48:42 UTC (rev 5)
+@@ -51,7 +51,6 @@
+ %{docdir}/ChangeLog
+ %{docdir}/AUTHORS
+ %{docdir}/Translators
+-%{docdir}/FDL
+ %{docdir}/API
+ %{docdir}/GPL
+ %{docdir}/NEWS
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 15:50:21 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 15:50:21 +0200
+Subject: [Mdate-svn] r6 - trunk
+Message-ID: <200510061350.j96DoL1Z025213@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 15:50:21 +0200 (Thu, 06 Oct 2005)
+New Revision: 6
+
+Modified:
+   trunk/Makefile
+Log:
+versioning 1.5.3
+
+Modified: trunk/Makefile
+===================================================================
+--- trunk/Makefile	2005-10-06 13:48:42 UTC (rev 5)
++++ trunk/Makefile	2005-10-06 13:50:21 UTC (rev 6)
+@@ -35,9 +35,9 @@
+ srcdir = .
+ 
+ PACKAGE=Mdate
+-VERSION=1.5.2
++VERSION=1.5.3
+ 
+-SVNVERSION = 1-5-2
++SVNVERSION = 1-5-3
+ # for future use on the net
+ REPOS=http://services.pengsheep.org/svn/mdate
+ 
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 15:52:42 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 15:52:42 +0200
+Subject: [Mdate-svn] r7 - in trunk: . debian
+Message-ID: <200510061352.j96Dqgn4025473@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 15:52:42 +0200 (Thu, 06 Oct 2005)
+New Revision: 7
+
+Modified:
+   trunk/ChangeLog
+   trunk/debian/docs
+Log:
+fixed debian targets
+
+Modified: trunk/ChangeLog
+===================================================================
+--- trunk/ChangeLog	2005-10-06 13:50:21 UTC (rev 6)
++++ trunk/ChangeLog	2005-10-06 13:52:42 UTC (rev 7)
+@@ -7,142 +7,23 @@
+ 
+ -- 
+ 
+-2004-12-19 00:28  ewe2
++2005-10-06 13:50  ewe2
+ 
+-	* trunk/ChangeLog, trunk/debian/changelog: updated debian stuff
++	* trunk/Makefile: versioning 1.5.3
+ 
+-2004-12-19 00:22  ewe2
++2005-10-06 13:48  ewe2
+ 
+-	* trunk/ChangeLog: align trunk with tag dir
++	* trunk/FDL, trunk/Makefile, trunk/NEWS, trunk/mdate-1.html,
++	  trunk/mdate.sgml, trunk/mdate.spec: Relicensed documentation,
++	  removed FDl
+ 
+-2004-12-19 00:16  ewe2
++2005-03-09 03:22  ewe2
+ 
+-	* trunk/ChangeLog, trunk/Makefile: more fixes grr
++	* trunk/TODO: added TODO for 1.5.3 release
+ 
+-2004-12-19 00:12  ewe2
++2004-12-19 15:46  ewe2
+ 
+-	* trunk/ChangeLog: 
+-
+-2004-12-19 00:10  ewe2
+-
+-	* trunk/ChangeLog, trunk/NEWS, trunk/mdate-1.html,
+-	  trunk/mdate-4.html, trunk/mdate.1, trunk/mdate.html,
+-	  trunk/mdate.sgml, trunk/mdate.spec, trunk/mdate.text: more doc
+-	  updates for svn Mdate
+-
+-2004-12-18 23:59  ewe2
+-
+-	* trunk/ChangeLog: 
+-
+-2004-12-18 23:59  ewe2
+-
+-	* trunk/Makefile: fixed small tag target error
+-
+-2004-12-18 23:58  ewe2
+-
+-	* trunk/ChangeLog: 
+-
+-2004-12-18 23:51  ewe2
+-
+-	* trunk/ChangeLog: 
+-
+-2004-12-18 23:51  ewe2
+-
+-	* trunk/ChangeLog, trunk/Makefile: more changes for svn devel
+-
+-2004-12-18 23:02  ewe2
+-
+-	* trunk/ChangeLog.header, trunk/NEWS, trunk/README: fixes
+-	  preparatory to revising Changelog format
+-
+-2004-12-18 20:37  ewe2
+-
+-	* trunk/mdate.cc: some comment cleanup
+-
+-2004-12-16 19:10  ewe2
+-
+-	* trunk/NEWS: testing 1st commit on mdate svn source
+-
+-2004-08-14 21:10  ewe2
+-
+-	* trunk/ChangeLog.header, trunk/debian/copyright: This commit was
+-	  generated by cvs2svn to compensate for changes in r24, which
+-	  included commits to RCS files with non-trunk default branches.
+-
+-2004-08-13 16:39  ewe2
+-
+-	* trunk/BUGS, trunk/NEWS: docs update for 1.5.1
+-
+-2004-08-13 16:28  ewe2
+-
+-	* trunk/BUGS, trunk/Makefile, trunk/README, trunk/de.h, trunk/en.h,
+-	  trunk/es.h, trunk/fr.h, trunk/mdate.1, trunk/mdate.sgml,
+-	  trunk/pl.h: removed default @a/@A because it segfaulted for early
+-	  dates
+-
+-2004-08-13 15:45  ewe2
+-
+-	* trunk/Makefile: fix from upstream CVS
+-
+-2004-08-13 15:45  ewe2
+-
+-	* trunk/mdate.cc: formatting fix for tzolkin/haab dates
+-
+-2004-06-14 14:19  ewe2
+-
+-	* trunk/API, trunk/AUTHORS, trunk/BUGS, trunk/ChangeLog,
+-	  trunk/Makefile, trunk/NEWS, trunk/README, trunk/Translators,
+-	  trunk/config.h, trunk/de.h, trunk/debian/changelog,
+-	  trunk/debian/docs, trunk/en.h, trunk/es.h, trunk/fr.h,
+-	  trunk/lang.cc, trunk/lang.hh, trunk/main.cc, trunk/mdate-1.html,
+-	  trunk/mdate-2.html, trunk/mdate-3.html, trunk/mdate-4.html,
+-	  trunk/mdate.1, trunk/mdate.cc, trunk/mdate.hh, trunk/mdate.html,
+-	  trunk/mdate.sgml, trunk/mdate.spec, trunk/mdate.text,
+-	  trunk/names.hh, trunk/pl.h: updates for 1.5.0
+-
+-2004-05-30 03:23  ewe2
+-
+-	* trunk/README, trunk/cmdline.cc, trunk/cmdline.h, trunk/config.h,
+-	  trunk/lang.cc, trunk/main.cc, trunk/mdate.cc, trunk/mdate.hh,
+-	  trunk/mdate.sgml: more textual fixes and date adjustments
+-
+-2004-05-29 16:28  ewe2
+-
+-	* trunk/AUTHORS: acknowledge vampyr
+-
+-2004-05-29 16:26  ewe2
+-
+-	* trunk/BUGS: added a little more useful information in BUGS
+-
+-2004-05-29 15:37  ewe2
+-
+-	* trunk/Makefile: bugs and omissions fixed
+-
+-2004-05-28 06:34  ewe2
+-
+-	* trunk/cmdline.h, trunk/mdate.cc, trunk/mdate_pl.sgml: fixed
+-	  left-over email addys
+-
+-2004-05-28 06:27  ewe2
+-
+-	* trunk/ChangeLog, trunk/Makefile, trunk/NEWS, trunk/README,
+-	  trunk/Translators, trunk/cmdline.cc, trunk/config.h, trunk/de.h,
+-	  trunk/debian/README.Debian, trunk/debian/changelog,
+-	  trunk/debian/control, trunk/debian/copyright, trunk/es.h,
+-	  trunk/lang.cc, trunk/main.cc, trunk/mdate-1.html,
+-	  trunk/mdate-2.html, trunk/mdate-4.html, trunk/mdate.1,
+-	  trunk/mdate.cc, trunk/mdate.hh, trunk/mdate.html,
+-	  trunk/mdate.sgml, trunk/mdate.spec, trunk/mdate.text: This commit
+-	  was generated by cvs2svn to compensate for changes in r9, which
+-	  included commits to RCS files with non-trunk default branches.
+-
+-2004-05-28 06:27  ewe2
+-
+-	* trunk/BUGS, trunk/mdate_pl.sgml: Initial revision
+-
+-2004-01-03 08:20  ewe2
+-
+-	* trunk, trunk/.cvsignore, trunk/API, trunk/AUTHORS,
++	* trunk/.cvsignore, trunk/API, trunk/AUTHORS, trunk/BUGS,
+ 	  trunk/ChangeLog, trunk/ChangeLog.header, trunk/FDL, trunk/GPL,
+ 	  trunk/Makefile, trunk/NEWS, trunk/README, trunk/Translators,
+ 	  trunk/cmdline.cc, trunk/cmdline.h, trunk/config.h, trunk/de.h,
+@@ -154,10 +35,11 @@
+ 	  trunk/lang.hh, trunk/main.cc, trunk/mdate-1.html,
+ 	  trunk/mdate-2.html, trunk/mdate-3.html, trunk/mdate-4.html,
+ 	  trunk/mdate.1, trunk/mdate.cc, trunk/mdate.hh, trunk/mdate.html,
+-	  trunk/mdate.sgml, trunk/mdate.spec, trunk/mdate.text, trunk/pl.h,
+-	  trunk/snprintf.c: Initial revision
++	  trunk/mdate.sgml, trunk/mdate.spec, trunk/mdate.text,
++	  trunk/mdate_pl.sgml, trunk/names.hh, trunk/pl.h, trunk/snprintf.c:
++	  initial import of mdate
+ 
+-2004-01-03 08:20  
++2004-12-19 15:44  ewe2
+ 
+-	* branches, tags, trunk: New repository initialized by cvs2svn.
++	* branches, clients, tags, trunk: initial mdate layout
+ 
+
+Modified: trunk/debian/docs
+===================================================================
+--- trunk/debian/docs	2005-10-06 13:50:21 UTC (rev 6)
++++ trunk/debian/docs	2005-10-06 13:52:42 UTC (rev 7)
+@@ -1,6 +1,5 @@
+ NEWS
+ README
+-FDL
+ API
+ BUGS
+ Translators
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 15:59:18 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 15:59:18 +0200
+Subject: [Mdate-svn] r8 - tags
+Message-ID: <200510061359.j96DxI2v026230@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 15:59:18 +0200 (Thu, 06 Oct 2005)
+New Revision: 8
+
+Added:
+   tags/mdate-1-5-3/
+Log:
+tag-release mdate-1.5.3
+
+
+Copied: tags/mdate-1-5-3 (from rev 7, trunk)
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 16:09:39 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 16:09:39 +0200
+Subject: [Mdate-svn] r9 - tags/mdate-1-5-3
+Message-ID: <200510061409.j96E9d4Y027780@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 16:09:38 +0200 (Thu, 06 Oct 2005)
+New Revision: 9
+
+Added:
+   tags/mdate-1-5-3/trunk/
+Log:
+Fixed versioning in some docs
+
+
+Copied: tags/mdate-1-5-3/trunk (from rev 8, trunk)
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 16:13:06 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 16:13:06 +0200
+Subject: [Mdate-svn] r10 - in trunk: . debian
+Message-ID: <200510061413.j96ED62C028400@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 16:13:06 +0200 (Thu, 06 Oct 2005)
+New Revision: 10
+
+Modified:
+   trunk/ChangeLog
+   trunk/Makefile
+   trunk/README
+   trunk/debian/changelog
+   trunk/mdate-1.html
+   trunk/mdate.1
+   trunk/mdate.sgml
+   trunk/mdate.text
+Log:
+fixed more documentation for 1.5.3
+
+Modified: trunk/ChangeLog
+===================================================================
+--- trunk/ChangeLog	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/ChangeLog	2005-10-06 14:13:06 UTC (rev 10)
+@@ -7,6 +7,10 @@
+ 
+ -- 
+ 
++2005-10-06 13:52  ewe2
++
++	* trunk/ChangeLog, trunk/debian/docs: fixed debian targets
++
+ 2005-10-06 13:50  ewe2
+ 
+ 	* trunk/Makefile: versioning 1.5.3
+
+Modified: trunk/Makefile
+===================================================================
+--- trunk/Makefile	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/Makefile	2005-10-06 14:13:06 UTC (rev 10)
+@@ -39,7 +39,8 @@
+ 
+ SVNVERSION = 1-5-3
+ # for future use on the net
+-REPOS=http://services.pengsheep.org/svn/mdate
++#REPOS=http://services.pengsheep.org/svn/mdate
++REPOS=svn+ssh://svn.berlios.de/svnroot/repos/mdate
+ 
+ ## DEFINE YOUR PREFERRED DEFAULT LANGUAGE HERE with a 1!
+ DEF_EN=
+
+Modified: trunk/README
+===================================================================
+--- trunk/README	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/README	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,4 +1,4 @@
+-Mdate++ 1.5.2  Copyright(c) 1998-2004 Sean Dwyer <ewe2 at users.sourceforge.net>
++Mdate++ 1.5.3  Copyright(c) 1998-2004 Sean Dwyer <ewe2 at users.sourceforge.net>
+ =============================================================================
+ 
+ Mdate++ is really Mdate 1.2.8 rewritten in C++, folding in libmdate 0.0.5, and
+
+Modified: trunk/debian/changelog
+===================================================================
+--- trunk/debian/changelog	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/debian/changelog	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,3 +1,9 @@
++mdate (1.5.3) unstable; urgency=low
++
++  * New upstream version, relicensed documentation for Debian. 
++
++ -- ewe2 <ewe2 at users.sourceforge.net>  Fri,  7 Oct 2005 00:11:55 +1000
++
+ mdate (1.5.2-1) unstable; urgency=low
+ 
+   * New upstream version, changed VC to subversion.
+
+Modified: trunk/mdate-1.html
+===================================================================
+--- trunk/mdate-1.html	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate-1.html	2005-10-06 14:13:06 UTC (rev 10)
+@@ -38,7 +38,7 @@
+ <H2><A NAME="ss1.2">1.2</A> <A HREF="mdate.html#toc1.2">History</A>
+ </H2>
+ 
+-<P>The current version of Mdate is 1.5.2, written by Sean Dwyer with help from
++<P>The current version of Mdate is 1.5.3, written by Sean Dwyer with help from
+ many others over the years.</P>
+ <P>The first public version of Mdate was 0.5.0, written in late 1998, and was
+ also ported to MS-DOS. Craig Robbins contributed to versions 0.5.1 to
+
+Modified: trunk/mdate.1
+===================================================================
+--- trunk/mdate.1	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.1	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,5 +1,5 @@
+ .\" $Id: mdate.1 37 2004-12-19 00:10:22Z ewe2 $
+-.TH MDATE 1 "Sunday 19 December 2004" "Linux" "1.5.2"
++.TH MDATE 1 "Friday 7 October 2005" "Linux" "1.5.3"
+ .SH NAME
+ mdate \- a command-line mayan date utility
+ .SH SYNOPSIS
+
+Modified: trunk/mdate.sgml
+===================================================================
+--- trunk/mdate.sgml	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.sgml	2005-10-06 14:13:06 UTC (rev 10)
+@@ -40,7 +40,7 @@
+ 
+ <sect1>History
+ <p>
+-The current version of Mdate is 1.5.2, written by Sean Dwyer with help from
++The current version of Mdate is 1.5.3, written by Sean Dwyer with help from
+ many others over the years.
+ 
+ The first public version of Mdate was 0.5.0, written in late 1998, and was
+
+Modified: trunk/mdate.text
+===================================================================
+--- trunk/mdate.text	2005-10-06 14:09:38 UTC (rev 9)
++++ trunk/mdate.text	2005-10-06 14:13:06 UTC (rev 10)
+@@ -1,7 +1,7 @@
+   Mdate
+   Sean Dwyer <ewe2 at users.sourceforge.net>
+-  $Revision: 1.4 $ $Date: 2004-08-14 02:28:57 +1000 (Sat, 14
+-  Aug 2004) $
++  $Revision: 1.4 $ $Date: 2004-12-19 11:10:22 +1100 (Sun, 19
++  Dec 2004) $
+ 
+   Mdate is an easy to use command-line utility for conversion between
+   Gregorian calendar  dates and Mayan calendar dates.
+@@ -45,14 +45,12 @@
+ 
+   [1m1.1.  Disclaimer & License[0m
+ 
+-  This document is distributed in the hope that it will be useful, but
+-  WITHOUT ANY WARRANTY; without even the implied warranty of
+-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
++  This document was formerly licensed under the GNU FDL 1.1. It now
++  falls under the general GPL license of the accompanying code. Previous
++  versions of this documentation may, if wished, also fall under GPL on
++  contact with the author.
+ 
+-  Copyright (c) 2002-2004 by Sean Dwyer. This material may be
+-  distributed only subject to the terms and conditions set forth in the
+-  GNU Free Documentation License, v1.1 or later (the latest version is
+-  presently available at http://www.gnu.org/copyleft/fdl.html).
++  Copyright (c) 2002-2004 by Sean Dwyer.
+ 
+   Please freely copy and distribute (sell or give away) this document in
+   any format, providing you adhere to the terms of the above License.
+@@ -62,8 +60,10 @@
+ 
+   [1m1.2.  History[0m
+ 
+-  The current version of Mdate is 1.5.2, written by Sean Dwyer with help
++  The current version of Mdate is 1.5.3, written by Sean Dwyer with help
+   from many others over the years.
++
++
+   The first public version of Mdate was 0.5.0, written in late 1998, and
+   was also ported to MS-DOS. Craig Robbins contributed to versions 0.5.1
+   to 1.0.0beta1. Version 1.0.0beta1 (1999) was the first GPL version of
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 16:26:55 2005
+From: ewe2 at berlios.de (ewe2 at berlios.de)
+Date: Thu, 6 Oct 2005 16:26:55 +0200
+Subject: [Mdate-svn] r11 - tags
+Message-ID: <200510061426.j96EQtEJ029867@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 16:26:50 +0200 (Thu, 06 Oct 2005)
+New Revision: 11
+
+Removed:
+   tags/mdate-1-5-3/
+Log:
+removing problematic tags dir
+
+
+
+
+From ewe2 at berlios.de  Thu Oct  6 16:27:48 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Thu, 6 Oct 2005 16:27:48 +0200
+Subject: [Mdate-svn] r12 - tags
+Message-ID: <200510061427.j96ERm1K030027@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-06 16:27:48 +0200 (Thu, 06 Oct 2005)
+New Revision: 12
+
+Added:
+   tags/mdate-1-5-3/
+Log:
+recommitting tags-release mdate-1-5-3
+
+
+Copied: tags/mdate-1-5-3 (from rev 11, trunk)
+
+
+
+From ewe2 at 4dot0.net  Thu Oct  6 16:31:25 2005
+From: ewe2 at 4dot0.net (ewe2)
+Date: Fri, 7 Oct 2005 00:31:25 +1000
+Subject: [Mdate-svn] Documentation license
+In-Reply-To: <8511b92f0510060616j24823624i@mail.gmail.com>
+References: <8511b92f0510060616j24823624i@mail.gmail.com>
+Message-ID: <20051006143125.GF12138@4dot0.net>
+
+On Thu, Oct 06, 2005 at 03:16:37PM +0200, Enrique Mat?as S?nchez (Quique) wrote:
+> Hi,
+> I noticed the mdate documentation is currently under the GNU Free
+> Documentation License, v1.1 or later.
+> 
+> Unfortunately, the Debian project regards this license as non-free,
+> and documentation under this license will not be included in future
+> releases:
+>     http://release.debian.org/removing-non-free-documentation.
+> 
+> Could the documentation be relicensed as regular GNU GPL?
+> 
+> Thanks,
+>  Quique
+
+Hi Quique!
+
+Ack, this is a problem. Nasty problems with the Creative Commons License too.
+I suppose I'll just have to do that, because I want mdate back in Debian and
+Ubuntu would be good also.
+
+I've changed the documentation in the repository, there's a tag release of
+mdate-1.5.3 at http://svn.berlios.de/svnroot/repos/mdate/tags/mdate-1-5-3 for
+immediate use, and I'll get a proper release going over the weekend.
+
+-- 
+"I reject your reality and substitute my own!" - Adam Savage
+
+
+
+From cronopios at gmail.com  Fri Oct  7 07:52:23 2005
+From: cronopios at gmail.com (=?ISO-8859-1?Q?Enrique_Mat=EDas_S=E1nchez_=28Quique=29?=)
+Date: Fri, 7 Oct 2005 07:52:23 +0200
+Subject: [Mdate-svn] Documentation license
+In-Reply-To: <20051006143125.GF12138@4dot0.net>
+References: <8511b92f0510060616j24823624i@mail.gmail.com>
+	 <20051006143125.GF12138@4dot0.net>
+Message-ID: <8511b92f0510062252o34b750edy@mail.gmail.com>
+
+2005/10/6, ewe2:
+
+> Hi Quique!
+>
+> Ack, this is a problem. Nasty problems with the Creative Commons License too.
+> I suppose I'll just have to do that, because I want mdate back in Debian and
+> Ubuntu would be good also.
+>
+> I've changed the documentation in the repository
+
+Great!
+
+Also: you are the main author, but your name doesn't appear on the AUTHORS file.
+
+Cheers,
+ Quique
+
+
+--
+It is impossible to make anything foolproof, because fools are so ingenious.
+- Roger Berg
+
+
+From ewe2 at 4dot0.net  Fri Oct  7 12:46:00 2005
+From: ewe2 at 4dot0.net (ewe2)
+Date: Fri, 7 Oct 2005 20:46:00 +1000
+Subject: [Mdate-svn] Documentation license
+In-Reply-To: <8511b92f0510062252o34b750edy@mail.gmail.com>
+References: <8511b92f0510060616j24823624i@mail.gmail.com> <20051006143125.GF12138@4dot0.net> <8511b92f0510062252o34b750edy@mail.gmail.com>
+Message-ID: <20051007104600.GH12138@4dot0.net>
+
+On Fri, Oct 07, 2005 at 07:52:23AM +0200, Enrique Mat?as S?nchez (Quique) wrote:
+
+> > I've changed the documentation in the repository
+> 
+> Great!
+> 
+> Also: you are the main author, but your name doesn't appear on the AUTHORS file.
+
+Is that much of a problem really?
+
+-- 
+"I reject your reality and substitute my own!" - Adam Savage
+
+
+
+From cronopios at gmail.com  Fri Oct  7 15:09:46 2005
+From: cronopios at gmail.com (=?ISO-8859-1?Q?Enrique_Mat=EDas_S=E1nchez_=28Quique=29?=)
+Date: Fri, 7 Oct 2005 15:09:46 +0200
+Subject: [Mdate-svn] Documentation license
+In-Reply-To: <20051007104600.GH12138@4dot0.net>
+References: <8511b92f0510060616j24823624i@mail.gmail.com>
+	 <20051006143125.GF12138@4dot0.net>
+	 <8511b92f0510062252o34b750edy@mail.gmail.com>
+	 <20051007104600.GH12138@4dot0.net>
+Message-ID: <8511b92f0510070609mdd394efg@mail.gmail.com>
+
+2005/10/7, ewe2:
+
+> > Also: you are the main author, but your name doesn't appear on the AUTHORS file.
+>
+> Is that much of a problem really?
+
+I don't think so. I'm probably nitpicking, but as it can be fixed in
+just a few seconds...
+
+
+--
+It is impossible to make anything foolproof, because fools are so ingenious.
+- Roger Berg
+
+
+From ewe2 at berlios.de  Fri Oct  7 15:25:08 2005
+From: ewe2 at berlios.de (sean dwyer at BerliOS)
+Date: Fri, 7 Oct 2005 15:25:08 +0200
+Subject: [Mdate-svn] r13 - trunk
+Message-ID: <200510071325.j97DP8YX022520@sheep.berlios.de>
+
+Author: ewe2
+Date: 2005-10-07 15:25:06 +0200 (Fri, 07 Oct 2005)
+New Revision: 13
+
+Modified:
+   trunk/AUTHORS
+Log:
+added myself to AUTHORS
+
+Modified: trunk/AUTHORS
+===================================================================
+--- trunk/AUTHORS	2005-10-06 14:27:48 UTC (rev 12)
++++ trunk/AUTHORS	2005-10-07 13:25:06 UTC (rev 13)
+@@ -1,3 +1,5 @@
++Author: Sean Dwyer <ewe2 at berlios.de>
++
+ Thanks to the following coders who have contributed to mdate, past and
+ present: they made the pursuit of Open Source involvement an abiding joy for
+ me.
+
+
+
+From ewe2 at 4dot0.net  Fri Oct  7 15:27:24 2005
+From: ewe2 at 4dot0.net (ewe2)
+Date: Fri, 7 Oct 2005 23:27:24 +1000
+Subject: [Mdate-svn] Documentation license
+In-Reply-To: <8511b92f0510070609mdd394efg@mail.gmail.com>
+References: <8511b92f0510060616j24823624i@mail.gmail.com> <20051006143125.GF12138@4dot0.net> <8511b92f0510062252o34b750edy@mail.gmail.com> <20051007104600.GH12138@4dot0.net> <8511b92f0510070609mdd394efg@mail.gmail.com>
+Message-ID: <20051007132724.GI12138@4dot0.net>
+
+On Fri, Oct 07, 2005 at 03:09:46PM +0200, Enrique Mat?as S?nchez (Quique) wrote:
+
+> > Is that much of a problem really?
+> 
+> I don't think so. I'm probably nitpicking, but as it can be fixed in
+> just a few seconds...
+
+fixed in the source, there'll be a diff up on here.
+
+-- 
+"I reject your reality and substitute my own!" - Adam Savage
+
+
+
